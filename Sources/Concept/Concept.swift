@@ -28,7 +28,7 @@ import UIKit
         oddView.backgroundColor = configuration.oddColor
     }
 
-    public func didLayout() {
+    @objc public func didLayout() {
         print( #function )
         let cubit = min(viewController.view.bounds.width,viewController.view.bounds.height) / 4
         let midHeight = viewController.view.bounds.origin.y + (viewController.view.bounds.height / 2)
@@ -41,11 +41,11 @@ import UIKit
         oddView.frame = oddBox
     }
 
-    public func willAppear() {
+    @objc public func willAppear() {
         print( #function )
     }
 
-    public func didDisappear() {
+    @objc public func didDisappear() {
         print( #function )
     }
 
