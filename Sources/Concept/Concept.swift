@@ -35,7 +35,7 @@ import UIKit
         let midWidth = viewController.view.bounds.origin.x + (viewController.view.bounds.width / 2)
 
         let evenBox = CGRect(x: midWidth - (2 * cubit), y: midHeight - (cubit), width: cubit, height: cubit)
-        let oddBox = CGRect(x: midWidth + (2 * cubit), y: midHeight - (cubit), width: cubit, height: cubit)
+        let oddBox = CGRect(x: midWidth + (1 * cubit), y: midHeight - (cubit), width: cubit, height: cubit)
 
         evenView.frame = evenBox
         oddView.frame = oddBox
