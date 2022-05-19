@@ -39,6 +39,18 @@ import UIKit
 
         evenView.frame = evenBox
         oddView.frame = oddBox
+
+        makeCircle(for: oddView)
+    }
+
+    func makeCircle(for view: UIView) {
+        view.layer.sublayers?.removeAll()
+        let path = UIBezierPath(ovalIn: view.bounds)
+        let shape = CAShapeLayer()
+        shape.path = path.cgPath
+        shape.lineWidth = 5
+        shape.strokeColor = UIColor.white.cgColor
+        view.layer.addSublayer(shape)
     }
 
     @objc public func willAppear() {
